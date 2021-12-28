@@ -1,0 +1,18 @@
+- clean: ['~']
+
+- shell:
+    - command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      description: Install Homebrew
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      description: Install Oh My ZSH
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: xargs brew reinstall < brew/leaves.txt
+      description: Install brew packages
+      stdin: true
+      stdout: true
+      stderr: true
