@@ -1,5 +1,11 @@
 - clean: ['~']
 
+- link:
+    - ~/.gitignore
+    - ~/.iterm2_shell_integration.zsh
+    - ~/.p10k.zsh
+    - ~/.zshrc
+
 - shell:
     - command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       description: Install Homebrew
