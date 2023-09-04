@@ -1,0 +1,27 @@
+[alias]
+  	co = checkout
+  	ci = commit
+  	st = status
+  	s = status
+  	br = branch
+  	ba = branch --all
+  	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  	type = cat-file -t
+  	dump = cat-file -p
+	new = !git init && git symbolic-ref HEAD refs/heads/main
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[user]
+	name = Andrea Vaghi
+	email = andrea.vaghi@motork.io
+[pull]
+	rebase = false
+[core]
+	editor = code --wait
+[push]
+	autoSetupRemote = true
